@@ -16,9 +16,10 @@
 <!-- Bootstrap core CSS -->
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<link href="assets/css/ie10-viewport-bug-workaround.css"
-	rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/justified-nav.css" rel="stylesheet">
+    
+    <link href="assets/css/signin.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
 <link href="assets/css/justified-nav.css" rel="stylesheet">
