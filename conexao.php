@@ -3,7 +3,7 @@ error_reporting(0);
 ini_set('display_errors', 0);
 
 // conexao ao banco
-$conexao = mysql_connect("localhost", "root", "vertrigo");
+$conexao = mysql_connect("192.168.7.129", "root", "vertrigo");
 
 if ($conexao) {
 
