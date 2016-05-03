@@ -10,6 +10,8 @@ $data['currency'] = 'BRL';
 session_start();
 include("conexao.php");
 
+include("validador.php");
+
 $i = 1;
 foreach ($_SESSION['carrinho'] as $cod_produto => $dados){
 
