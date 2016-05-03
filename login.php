@@ -4,7 +4,7 @@
 
 <div class="container">
 
-      <form class="form-signin">
+      <form action="validar.php" method="post">
         <h2 class="form-signin-heading" align="center">Bem-Vindo</h2>
         <label for="inputEmail" class="sr-only">email</label>
         <input type="email" id="inputEmail" class="form-control" placeholder="Digite seu email" required="" autofocus="">
