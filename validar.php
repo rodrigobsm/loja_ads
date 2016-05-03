@@ -4,15 +4,18 @@
 		
 		include("conexao.php");
 		
-		$usuario = $_POST["usuario"];
-		$senha = $_POST["senha"];
+		$usuario = $_POST["inputEmail"];
+		$senha = md5($_POST["inputPassword"]);
 		
-		$sql = "SELECT * FROM usuarios WHERE login='{$usuario}' AND senha='{$senha}';";
+		$sql = "SELECT * FROM clientes WHERE email='{$usuario}' AND senha='{$senha}';";
 		
 		$resultado = mysql_query($sql);
+				
+		if(!empty($resultado)){
+		
 		$validado = mysql_num_rows($resultado);
 		
-		if ($validado == true){
+		if ($validado > 0){
 			
 			session_start();
 			
@@ -22,11 +25,16 @@
 			
 			header("Location: index.php");
 			
+		} else{
+			
+			header("Location: login.php");
+		}
+		
 		}
 				
 	} else {
 		
-		header("Location: login.php");
+		("Location: login.php");
 	}
 
 
