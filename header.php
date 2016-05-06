@@ -28,24 +28,9 @@
 <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 <script src="assets/js/ie-emulation-modes-warning.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-<scritp src="assets/js/bootstrap.min.js"></scritp>
-
-<scritp src="assets/js/npm/transition.js"></scritp>
-<scritp src="assets/js/npm/alert.js"></scritp>
-<scritp src="assets/js/npm/button.js"></scritp>
-<scritp src="assets/js/npm/carousel.js"></scritp>
-<scritp src="assets/js/npm/collapse.js"></scritp>
-<scritp src="assets/js/npm/dropdown.js"></scritp>
-<scritp src="assets/js/npm/modal.js"></scritp>
-<scritp src="assets/js/npm/tooltip.js"></scritp>
-<scritp src="assets/js/npm/popover.js"></scritp>
-<scritp src="assets/js/npm/scrollspy.js"></scritp>
-<scritp src="assets/js/npm/tab.js"></scritp>
-<scritp src="assets/js/npm/affix.js"></scritp>
-
-<scritp src="assets/js/app.js"></scritp>
+<!-- Dropdown -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -74,8 +59,8 @@
 				  	<span class="caret"></span>
 				  </button>
 				  <ul class="dropdown-menu">
-				  	<li><a href="#">Entrar</a></li>
-				    <li><a href="#">Sair</a></li>
+				  	<li><a href="login.php">Entrar</a></li>
+				    <li><a href="logout.php">Sair</a></li>
 				  </ul>
 				</div>
 	</div>
