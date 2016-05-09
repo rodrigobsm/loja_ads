@@ -15,7 +15,7 @@
 	<!-- Text input-->
 	
 	<div class="form-group ">
-	  <label class="col-md-4 control-label" for="nome">Nome</label>  
+	  <label class="col-md-4 control-label" for="nome">Nome:</label>  
 	  <div class="col-md-4">
 	  <input id="nome" name="nome" type="text" class="form-control input-md" required>
 	    
@@ -24,7 +24,7 @@
 	
 	<!-- Text input-->
 	<div class="form-group">
-	  <label class="col-md-4 control-label" for="email">Email</label>  
+	  <label class="col-md-4 control-label" for="email">Email:</label>  
 	  <div class="col-md-4">
 	  <input id="email" name="email" type="text" class="form-control input-md" required>
 	    
@@ -33,7 +33,7 @@
 	
 	<!-- Text input--> 
 	<div class="form-group">
-	  <label class="col-md-4 control-label" for="cpf">Cpf</label>  
+	  <label class="col-md-4 control-label" for="cpf">Cpf:</label>  
 	  <div class="col-md-4">
 	  <input id="cpf" name="cpf" type="text" class="form-control input-md" required>
 	    
@@ -42,7 +42,7 @@
 	
 	<!-- Text input-->
 	<div class="form-group">
-	  <label class="col-md-4 control-label" for="tel_area">DDD</label>  
+	  <label class="col-md-4 control-label" for="tel_area">DDD:</label>  
 	  <div class="col-md-1">
 	  <input id="tel_area" name="tel_area" type="text"  class="form-control input-md" required>
 	    
@@ -50,7 +50,7 @@
 	</div>
 	<!-- Text input-->
 	<div class="form-group">
-	  <label class="col-md-4 control-label" for="tel_numero">Telefone</label>  
+	  <label class="col-md-4 control-label" for="tel_numero">Telefone:</label>  
 	  <div class="col-md-2">
 	  <input id="tel_numero" name="tel_numero" type="text" placeholder="" class="form-control input-md" required>
 	    
@@ -58,7 +58,7 @@
 	</div>
 	<!-- Text input-->
 	<div class="form-group">
-	  <label class="col-md-4 control-label" for="cep">Cep</label>  
+	  <label class="col-md-4 control-label" for="cep">Cep:</label>  
 	  <div class="col-md-2">
 	  <input id="cep" name="cep" type="text" placeholder="" class="form-control input-md" required>
 	    
@@ -67,7 +67,7 @@
 	
 	<!-- Text input-->
 	<div class="form-group">
-	  <label class="col-md-4 control-label" for="lagradouro">EndereÃ§o</label>  
+	  <label class="col-md-4 control-label" for="lagradouro">Endereço:</label>  
 	  <div class="col-md-4">
 	  <input id="lagradouro" name="lagradouro" type="text" placeholder="" class="form-control input-md" required>
 	    
@@ -76,7 +76,7 @@
 	
 	<!-- Text input-->
 	<div class="form-group">
-	  <label class="col-md-4 control-label" for="numero">NÃºmero</label>  
+	  <label class="col-md-4 control-label" for="numero">Número:</label>  
 	  <div class="col-md-1">
 	  <input id="numero" name="numero" type="text" placeholder="" class="form-control input-md" required>
 	    
@@ -85,7 +85,7 @@
 	
 	<!-- Text input-->
 	<div class="form-group">
-	  <label class="col-md-4 control-label" for="complemento">Complemento</label>  
+	  <label class="col-md-4 control-label" for="complemento">Complemento:</label>  
 	  <div class="col-md-2">
 	  <input id="complemento" name="complemento" type="text" placeholder="" class="form-control input-md" required>
 	    
@@ -94,7 +94,7 @@
 	
 	<!-- Text input-->
 	<div class="form-group">
-	  <label class="col-md-4 control-label" for="bairro">Bairro</label>  
+	  <label class="col-md-4 control-label" for="bairro">Bairro:</label>  
 	  <div class="col-md-4">
 	  <input id="bairro" name="bairro" type="text" placeholder="" class="form-control input-md" required>
 	    
@@ -103,7 +103,7 @@
 	
 	<!-- Text input-->
 	<div class="form-group">
-	  <label class="col-md-4 control-label" for="uf">UF</label>  
+	  <label class="col-md-4 control-label" for="uf">UF:</label>  
 	  <div class="col-md-4">
 	  <input id="uf" name="uf" type="text" placeholder="" class="form-control input-md" required>
 	    
@@ -112,7 +112,7 @@
 	
 	<!-- Text input-->
 	<div class="form-group">
-	  <label class="col-md-4 control-label" for="cidade">Cidade</label>  
+	  <label class="col-md-4 control-label" for="cidade">Cidade:</label>  
 	  <div class="col-md-4">
 	  <input id="cidade" name="cidade" type="text" placeholder="" class="form-control input-md" required>
 	    
@@ -121,7 +121,7 @@
 	
 	<!-- Password input-->
 	<div class="form-group">
-	  <label class="col-md-4 control-label" for="senha">Senha</label>
+	  <label class="col-md-4 control-label" for="senha">Senha:</label>
 	  <div class="col-md-4">
 	    <input id="senha" name="senha" type="password" placeholder="" class="form-control input-md" required>
 	    
