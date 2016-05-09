@@ -7,9 +7,9 @@
       <form action="validar.php" method="Post" class="form-signin">
         <h2 class="form-signin-heading" align="center">Bem-Vindo</h2>
         <label for="inputEmail" class="sr-only">email</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Digite seu email" required="" autofocus="">
+        <input type="email" name="inputEmail" class="form-control" placeholder="Digite seu email" required="" autofocus="">
         <label for="inputPassword" class="sr-only">Senha</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Digite sua senha" required="">
+        <input type="password" name="inputPassword" class="form-control" placeholder="Digite sua senha" required="">
         <div class="checkbox">
           <label>
             <input type="checkbox" value="remember-me"> Lembrar
