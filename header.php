@@ -5,13 +5,11 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="icon" href="assets/img/logo.png">
 
-<title>Submarin - ADS</title>
-
+<title>Submarino - ADS</title>
 
 <!-- Bootstrap core CSS -->
 <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -30,7 +28,7 @@
 
 <!-- Dropdown -->
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -51,7 +49,6 @@
 				<img src="assets/img/logo.png" height="80">
 
 				<div class="pull-right">
-				
 				<div class="btn-group">
 				  <button type="button" class="btn btn-default dropdown-toggle" 
 				  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -63,7 +60,7 @@
 				    <li><a href="logout.php">Sair</a></li>
 				  </ul>
 				</div>
-	</div>
+				</div>
 			</h3>
 
 			<nav>
