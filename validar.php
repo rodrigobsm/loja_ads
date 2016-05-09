@@ -10,7 +10,7 @@
 		$sql = "SELECT * FROM clientes WHERE email='{$usuario}' AND senha='{$senha}';";
 		
 		$resultado = mysql_query($sql);
-				
+						
 		if(!empty($resultado)){
 		
 		$validado = mysql_num_rows($resultado);
@@ -21,8 +21,8 @@
 			
 			$dados = mysql_fetch_array($resultado);
 			
-			$_SESSION['logado'] = $dados['cod_usuario'];
-			
+			$_SESSION['logado'] = $dados;
+						
 			header("Location: index.php");
 			
 		} else{

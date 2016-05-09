@@ -7,6 +7,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
+<style>
+body {
+	background: url(assets/img/bg.jpg) top center no-repeat;
+}
+</style>
 <link rel="icon" href="assets/img/logo.png">
 
 <title>Submarino - ADS</title>
@@ -46,7 +51,7 @@
            Multiple lines will require custom code not provided by Bootstrap. -->
 		<div class="masthead">
 			<h3 class="text-muted">
-				<img src="assets/img/logo.png" height="80">
+				<a href="index.php"><img src="assets/img/logo.png" height="100"></a>
 
 				<div class="pull-right">
 				<div class="btn-group">
