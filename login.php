@@ -17,6 +17,7 @@
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
       </form>
+      <p align="center"><a href="cadastro.php">Cadastre-se</a>
 
     </div> <!-- /container -->
 
