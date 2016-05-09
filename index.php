@@ -7,6 +7,13 @@ egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor
 mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
         <p><a class="btn btn-lg btn-success" href="#" role="button"><i class="glyphicon glyphicon-hand-right"></i> COMPRE AGORA</a></p>
       </div>
+      
+      <hr>
+      <h3>Confira essas novidades...
+      <a class="btn btn-primary pull-right" href="categorias.php">Ver Mais</a>
+      </h3>
+      <hr>
+      <br>
 
       <!-- Listagem de Produtos em Destaque -->
       <div class="row">
