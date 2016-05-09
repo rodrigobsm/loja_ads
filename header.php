@@ -50,11 +50,14 @@
 
 				<div class="pull-right">
 				<div class="btn-group">
+				<div class="logged" align="right">
+				<h5>Bem-Vindo</h5>
 				  <button type="button" class="btn btn-default dropdown-toggle" 
 				  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				  	<?php echo (isset($_SESSION['logado'])) ? $_SESSION['logado']['nome'] : 'Minha Conta' ?>
+				  	<?php echo (isset($_SESSION['logado'])) ? $_SESSION['logado']['nome'] : 'Entrar' ?>
 				  	<span class="caret"></span>
 				  </button>
+				  
 				  <ul class="dropdown-menu">
 				  	<li><a href="login.php">Entrar</a></li>
 				    <li><a href="logout.php">Sair</a></li>
