@@ -11,7 +11,8 @@ $acao = (isset($_REQUEST['acao'])) ? $_REQUEST['acao'] : null;
 if ($acao == 'adicionar') {
 	
 	// insere produto no carrinho
-	$_SESSION['carrinho'][$_POST['cod_produto']] = array('qnt' => $_POST['qnt']);
+	$qnt_atual = $_SESSION['carrinho'][$_POST['cod_produto']]['qnt'];
+	$_SESSION['carrinho'][$_POST['cod_produto']] = array('qnt' => $qnt_atual + $_POST['qnt']);
 
 }
 
