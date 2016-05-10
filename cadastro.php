@@ -68,7 +68,7 @@
 	<div class="form-group">
 	  <label class="col-md-4 control-label" for="logradouro">Endereço:</label>  
 	  <div class="col-md-4">
-	  <input id="lagradouro" name="logradouro" type="email" placeholder="Digite seu endereço" class="form-control input-md" required>
+	  <input id="lagradouro" name="logradouro" type="text" placeholder="Digite seu endereço" class="form-control input-md" required>
 	    
 	  </div>
 	</div>
