@@ -11,7 +11,6 @@
 	
 	<!-- Form Name -->
 	<legend>Loja ADS</legend>
-	  .
 	<!-- Text input-->
 	
 	<div class="form-group ">
