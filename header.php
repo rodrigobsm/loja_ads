@@ -59,13 +59,22 @@ body {
 				<h5>Bem-Vindo</h5>
 				  <button type="button" class="btn btn-default dropdown-toggle" 
 				  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				  	<?php echo (isset($_SESSION['logado'])) ? $_SESSION['logado']['nome'] : 'Entrar' ?>
+				  
+				  	<?php 
+				  	
+				  	session_start();
+				  	
+				  	echo (isset($_SESSION['logado'])) ? $_SESSION['logado']['nome'] : 'Minha Conta'
+				  	
+				  	?>
 				  	<span class="caret"></span>
 				  </button>
 				  
 				  <ul class="dropdown-menu">
-				  	<li><a href="login.php">Entrar</a></li>
-				    <li><a href="logout.php">Sair</a></li>
+				  <?php if (!isset($_SESSION['logado'])):?>	<li><a href="login.php">Entrar</a></li> <?php endif; ?>
+				  <?php if (isset($_SESSION['logado'])):?>  
+				  <li><a href="cadastro.php">Minha Conta</a></li>
+				  <li><a href="logout.php">Sair</a></li><?php endif; ?>
 				  </ul>
 				</div>
 				</div>
