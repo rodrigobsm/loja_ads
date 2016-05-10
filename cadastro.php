@@ -69,7 +69,7 @@
 	<div class="form-group">
 	  <label class="col-md-4 control-label" for="logradouro">Endereço:</label>  
 	  <div class="col-md-4">
-	  <input id="lagradouro" name="logradouro" type="text" placeholder="Digite seu endereço" class="form-control input-md" required>
+	  <input id="lagradouro" name="logradouro" type="email" placeholder="Digite seu endereço" class="form-control input-md" required>
 	    
 	  </div>
 	</div>
@@ -87,7 +87,7 @@
 	<div class="form-group">
 	  <label class="col-md-4 control-label" for="complemento">Complemento:</label>  
 	  <div class="col-md-2">
-	  <input id="complemento" name="complemento" type="text" placeholder="Caso houver acrecente um complemento ao seu endereço" class="form-control input-md" required>
+	  <input id="complemento" name="complemento" type="text" placeholder="Complemento" class="form-control input-md" required>
 	    
 	  </div>
 	</div>
