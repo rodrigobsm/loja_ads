@@ -7,6 +7,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
+<style>
+body {
+	background: url(assets/img/bg.jpg) top center no-repeat;
+}
+</style>
 <link rel="icon" href="assets/img/logo.png">
 
 <title>Submarino - ADS</title>
@@ -46,18 +51,30 @@
            Multiple lines will require custom code not provided by Bootstrap. -->
 		<div class="masthead">
 			<h3 class="text-muted">
-				<img src="assets/img/logo.png" height="80">
+				<a href="index.php"><img src="assets/img/logo.png" height="100"></a>
 
 				<div class="pull-right">
 				<div class="btn-group">
+				<div class="logged" align="right">
+				<h5>Bem-Vindo</h5>
 				  <button type="button" class="btn btn-default dropdown-toggle" 
 				  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				  	<?php echo (isset($_SESSION['logado'])) ? $_SESSION['logado']['nome'] : 'Minha Conta' ?>
+				  
+				  	<?php 
+				  	
+				  	session_start();
+				  	
+				  	echo (isset($_SESSION['logado'])) ? $_SESSION['logado']['nome'] : 'Minha Conta'
+				  	
+				  	?>
 				  	<span class="caret"></span>
 				  </button>
+				  
 				  <ul class="dropdown-menu">
-				  	<li><a href="login.php">Entrar</a></li>
-				    <li><a href="logout.php">Sair</a></li>
+				  <?php if (!isset($_SESSION['logado'])):?>	<li><a href="login.php">Entrar</a></li> <?php endif; ?>
+				  <?php if (isset($_SESSION['logado'])):?>  
+				  <li><a href="cadastro.php">Minha Conta</a></li>
+				  <li><a href="logout.php">Sair</a></li><?php endif; ?>
 				  </ul>
 				</div>
 				</div>

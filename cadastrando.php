@@ -5,7 +5,7 @@
 	// recebe os dados do formulário 
 	$nome=mysql_real_escape_string($_POST['nome']);
 	$email=mysql_real_escape_string($_POST['email']);
-	$senha=md5($_POST['senha']);
+	$senha=$_POST['senha'];
 	$cpf=mysql_real_escape_string($_POST['cpf']);
 	$tel_area=mysql_real_escape_string($_POST['tel_area']);
 	$tel_numero=mysql_real_escape_string($_POST['tel_numero']);
@@ -20,16 +20,22 @@
 	// verifica se email existe no banco de dados
 	$search = "SELECT * FROM clientes WHERE email = '$email'";
 	mysql_query($search,$conexao);
-	if(@mysql_num_rows($search) > 0){
-		// informa que email ja esta em uso e redireciona para tela de cadastro
-		echo "<script> alert('Email já cadastrado! Por favor utilize outro email ou tente recuperar sua senha!'); window.location.replace('cadastro.php'); </script>"; 
-	}else{
-		// cadastra usuario no banco e redireciona para tela de login
-		$queryCadastro = "INSERT INTO clientes (nome, email, senha, cpf, tel_area, tel_numero, cep, logradouro, numero, complemento, bairro, cidade, uf) VALUES ('$nome', '$email','$senha','$cpf','$tel_area','$tel_numero','$cep','$logradouro','$numero','$complemento','$bairro','$cidade','$uf')";
-		mysql_query($queryCadastro,$conexao);	
-		echo "<script> alert('Cadastro realizado com sucesso por favor realize login no sistema!'); window.location.replace('login.php'); </script>"; 
+	
+	//forca usuário a digitar senha com 7 caracteres no minimo
+	if (strlen($senha)< 8){
+		echo "<script> alert('Senha deve conter no mínimo 8 caracteres!, Digite uma nova senha'); window.location.replace('cadastro.php'); </script>";
+	}else {	
+		
+		if(@mysql_num_rows($search) > 0){
+			// informa que email ja esta em uso e redireciona para tela de cadastro
+			echo "<script> alert('Email já cadastrado! Por favor utilize outro email ou tente recuperar sua senha!'); window.location.replace('cadastro.php'); </script>";
+		}else{
+			// cadastra usuario no banco e redireciona para tela de login
+			$senha = md5($senha);
+			$queryCadastro = "INSERT INTO clientes (nome, email, senha, cpf, tel_area, tel_numero, cep, logradouro, numero, complemento, bairro, cidade, uf) VALUES ('$nome', '$email','$senha','$cpf','$tel_area','$tel_numero','$cep','$logradouro','$numero','$complemento','$bairro','$cidade','$uf')";
+			mysql_query($queryCadastro,$conexao);
+			echo "<script> alert('Cadastro realizado com sucesso por favor realize login no sistema!'); window.location.replace('login.php'); </script>";
+		}
 	}
 	
-	
-
 ?>
