@@ -32,21 +32,21 @@ foreach ($_SESSION['carrinho'] as $cod_produto => $dados){
 $data['reference'] = 'REF1234';
 
 // dados do cliente
-/*
-$data['senderName'] = 'Jose Comprador';
-$data['senderAreaCode'] = '11';
-$data['senderPhone'] = '56273440';
-$data['senderEmail'] = 'comprador@uol.com.br';
+
+$data['senderName'] = $_SESSION['nome'];
+$data['senderAreaCode'] = $_SESSION['tel_area'];
+$data['senderPhone'] = $_SESSION['tel_numero'];
+$data['senderEmail'] = $_SESSION['email'];
 $data['shippingType'] = '1';
-$data['shippingAddressStreet'] = 'Av. Brig. Faria Lima';
-$data['shippingAddressNumber'] = '1384';
-$data['shippingAddressComplement'] = '5o andar';
-$data['shippingAddressDistrict'] = 'Jardim Paulistano';
-$data['shippingAddressPostalCode'] = '01452002';
-$data['shippingAddressCity'] = 'Sao Paulo';
-$data['shippingAddressState'] = 'SP';
+$data['shippingAddressStreet'] = $_SESSION['logradouro'];
+$data['shippingAddressNumber'] = $_SESSION['numero'];
+$data['shippingAddressComplement'] = $_SESSION['complemento'];
+$data['shippingAddressDistrict'] = $_SESSION['bairro'];
+$data['shippingAddressPostalCode'] = $_SESSION['cep'];
+$data['shippingAddressCity'] = $_SESSION['cidade'];
+$data['shippingAddressState'] = $_SESSION['uf'];
 $data['shippingAddressCountry'] = 'BRA';
-*/
+
 $data['redirectURL'] = 'http://www.sounoob.com.br/paginaDeAgracedimento';
 
 //print_r($data); die();

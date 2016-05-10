@@ -25,7 +25,7 @@
 	<div class="form-group">
 	  <label class="col-md-4 control-label" for="email">Email:</label>  
 	  <div class="col-md-4">
-	  <input id="email" name="email" type="text" class="form-control input-md" placeholder="Digite um email válido" required>
+	  <input id="email" name="email" type="text" class="form-control input-md" placeholder="Digite um email vï¿½lido" required>
 	    
 	  </div>
 	</div>
@@ -66,18 +66,18 @@
 	
 	<!-- Text input-->
 	<div class="form-group">
-	  <label class="col-md-4 control-label" for="logradouro">Endereço:</label>  
+	  <label class="col-md-4 control-label" for="logradouro">EndereÃ§o:</label>  
 	  <div class="col-md-4">
-	  <input id="lagradouro" name="logradouro" type="text" placeholder="Digite seu endereço" class="form-control input-md" required>
+	  <input id="lagradouro" name="logradouro" type="text" placeholder="Digite seu endereÃ§o" class="form-control input-md" required>
 	    
 	  </div>
 	</div>
 	
 	<!-- Text input-->
 	<div class="form-group">
-	  <label class="col-md-4 control-label" for="numero">Número:</label>  
+	  <label class="col-md-4 control-label" for="numero">NÃºmero:</label>  
 	  <div class="col-md-1">
-	  <input id="numero" name="numero" type="text" placeholder="Digite o número" class="form-control input-md" required>
+	  <input id="numero" name="numero" type="text" placeholder="Digite o nÃºmero" class="form-control input-md" required>
 	    
 	  </div>
 	</div>
