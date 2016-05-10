@@ -1,5 +1,12 @@
 <?php include("header.php"); ?>
 
+		<?php if (isset($_SESSION['msg'])): ?>
+        <div class="alert alert-<?php echo $_SESSION['msg']['tipo']; ?>" role="alert">
+        	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <?php echo $_SESSION['msg']['texto']; unset($_SESSION['msg']); ?>
+        </div>
+        <?php endif; ?>
+
       <div class="jumbotron">
         <h1>Ofertas Dia das Mães</h1>
         <p class="lead">Cras justo odio, dapibus ac facilisis in, 
