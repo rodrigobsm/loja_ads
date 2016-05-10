@@ -65,8 +65,7 @@ include ("header.php");
 			      						   ON p.cod_categoria = c.cod_categoria
 			      					       WHERE p.cod_categoria = " . $_REQUEST ['cod_categoria'] . "
 										   LIMIT {$pg_atual}, {$produtos_por_pagina}");
-				
-				
+		
 				
 			} if (isset ( $_REQUEST ['buscar'] )) {
 				
@@ -83,7 +82,7 @@ include ("header.php");
 			      					       WHERE p.nome LIKE '%" . $_REQUEST ['buscar'] . "%'".
 									       "LIMIT {$pg_atual}, {$produtos_por_pagina}" );
 				
-			} else {
+			} else if (!isset($_REQUEST ['buscar']) && !isset ($_REQUEST ['cod_categoria'])) {
 				
 				$produtos = mysql_query ( "SELECT * FROM produtos WHERE 1" );
 				$total_produtos = mysql_num_rows($produtos);
@@ -93,7 +92,7 @@ include ("header.php");
 				
 			}
 			
-			echo "<div class=\"col-md-12\"><h5 style='clear:both;'>Exibindo ".$total_produtos." produtos em ".$total_paginas." páginas.</h5><hr></div>";
+			echo "<div class=\"col-md-12\"><h5 style='clear:both;'>Exibindo ".$total_produtos." produto(s) em ".$total_paginas." página(s).</h5><hr></div>";
 			
 			while ( $produto = mysql_fetch_array ( $produtos ) ) :
 				?>
