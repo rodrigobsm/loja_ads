@@ -5,7 +5,7 @@
 	// recebe os dados do formulário 
 	$nome=mysql_real_escape_string($_POST['nome']);
 	$email=mysql_real_escape_string($_POST['email']);
-	$senha=mysql_real_escape_string($_POST['senha']);
+	$senha=$_POST['senha'];
 	$cpf=mysql_real_escape_string($_POST['cpf']);
 	$tel_area=mysql_real_escape_string($_POST['tel_area']);
 	$tel_numero=mysql_real_escape_string($_POST['tel_numero']);
@@ -25,7 +25,7 @@
 	if (strlen($senha)< 8){
 		echo "<script> alert('Senha deve conter no mínimo 8 caracteres!, Digite uma nova senha'); window.location.replace('cadastro.php'); </script>";
 	}else {	
-	
+		
 		if(@mysql_num_rows($search) > 0){
 			// informa que email ja esta em uso e redireciona para tela de cadastro
 			echo "<script> alert('Email já cadastrado! Por favor utilize outro email ou tente recuperar sua senha!'); window.location.replace('cadastro.php'); </script>";
